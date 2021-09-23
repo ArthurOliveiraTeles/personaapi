@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bea6bfaebe26267e920d69ece0d72b6a976d3e06
 # Compiled class file
 *.class
 
@@ -22,6 +25,7 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+<<<<<<< HEAD
 =======
 HELP.md
 target/
@@ -57,3 +61,5 @@ build/
 ### VS Code ###
 .vscode/
 >>>>>>> 4abd20a (primeiro commit)
+=======
+>>>>>>> bea6bfaebe26267e920d69ece0d72b6a976d3e06
