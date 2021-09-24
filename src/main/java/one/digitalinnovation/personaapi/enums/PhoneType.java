@@ -11,6 +11,5 @@ public enum PhoneType {
     MOBILE("Mobile"),
     COMMERCIAL("Commercial");
 
-    PhoneType(String description) {
-    }
+    private final String description;
 }

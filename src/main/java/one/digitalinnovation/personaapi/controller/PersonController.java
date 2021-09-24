@@ -1,5 +1,6 @@
 package one.digitalinnovation.personaapi.controller;
 
+import one.digitalinnovation.personaapi.dto.response.MessageResponseDTO;
 import one.digitalinnovation.personaapi.entity.Person;
 import one.digitalinnovation.personaapi.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,8 +18,10 @@ public class PersonController {
     }
 
     @PostMapping
-    public String createPerson(@RequestBody Person person){
+    public MessageResponseDTO createPerson(@RequestBody Person person){
         Person savedPerson = personRepository.save(person);
-        return "API Test!";
+        return MessageResponseDTO.builder()
+                .message("Created person with ID " + savedPerson.getId())
+                .build();
     }
 }
